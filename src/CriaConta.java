@@ -1,16 +1,14 @@
 public class CriaConta {
     public static void main(String[] args) {
         Cliente jorge = new Cliente();
-        jorge.nome = " Jorge Lago";
-        jorge.cpf = "334.334.223.99";
-        jorge.profissao = "programador";
+        jorge.setNome(" Jorge Lago"); 
+        jorge.setCpf("334.334.223.99");
+        jorge.setProfissao("programador");
         
         Conta contaDoJorge = new Conta();
-        contaDoJorge.agencia = 2332;
-        contaDoJorge.numero = 422;
-        contaDoJorge.saldo = 7000;
-        contaDoJorge.titular = jorge;
-
-        System.out.println(contaDoJorge.saldo);
+        contaDoJorge.setAgencia(43334);
+        contaDoJorge.setNumero(2222);;
+        contaDoJorge.deposita(7000);
+        contaDoJorge.setTitular(jorge);
     }
 }
